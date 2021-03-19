@@ -17,11 +17,6 @@ import {
 } from 'react-native-twilio-video-webrtc';
 
 const HomeScreen = (props) => {
-  /*  ACe1ef6c0aec12d60819a8c26c5edd5eb6
-  
-  ------> SK1240f3944983f3f3c2983cf861e54093
-  ------> S8tkzP8yPJkeAH1u1CfaZrGOXlSp7OrN
-  */
   const [isAudioEnabled, setIsAudioEnabled] = useState(true);
   const [isVideoEnabled, setIsVideoEnabled] = useState(true);
   const [status, setStatus] = useState('disconnected');

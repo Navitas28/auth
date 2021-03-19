@@ -34,8 +34,7 @@ const AuthScreen = (props) => {
   const onSignup = async () => {
     GoogleSignin.configure({
       scopes: ['email'],
-      webClientId:
-        '440700986057-46mb9bp4krfmhh4hu06e6r935dl09hls.apps.googleusercontent.com',
+      webClientId: '',
       offlineAccess: true,
     });
     try {
