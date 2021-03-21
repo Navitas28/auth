@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   StyleSheet,
   View,
@@ -6,6 +6,7 @@ import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
   Keyboard,
+  Alert,
 } from 'react-native';
 import {useDispatch} from 'react-redux';
 import {Text, TextInput, HelperText, Button} from 'react-native-paper';
@@ -15,11 +16,14 @@ import {useForm, Controller} from 'react-hook-form';
 import {
   GoogleSignin,
   GoogleSigninButton,
+  statusCodes,
 } from '@react-native-community/google-signin';
 
 import * as authActions from '../../store/actions';
 import DefaultStyles from '../../styles/DefaultStyles';
 import {isAndroid} from '../../utils/helpers';
+const WEB_CLIENT_ID =
+  '440700986057-46mb9bp4krfmhh4hu06e6r935dl09hls.apps.googleusercontent.com';
 
 const AuthScreen = (props) => {
   const {control, handleSubmit, errors} = useForm();
@@ -30,19 +34,41 @@ const AuthScreen = (props) => {
     dispatch(authActions.getOtp(mobile));
     props.navigation.navigate('OtpVerify', {mobile});
   };
+  useEffect(() => {
+    configureGoogleSign();
+  }, []);
+
+  const configureGoogleSign = () => {
+    GoogleSignin.configure({
+      webClientId: WEB_CLIENT_ID,
+      offlineAccess: false,
+    });
+  };
 
   const onSignup = async () => {
-    GoogleSignin.configure({
-      scopes: ['email'],
-      webClientId: '',
-      offlineAccess: true,
-    });
     try {
       await GoogleSignin.hasPlayServices();
-      const {accessToken, idToken} = await GoogleSignin.signIn();
-      console.log('User', accessToken, '', idToken);
-    } catch (err) {
-      console.log('Err', err);
+
+      const userInfo = await GoogleSignin.signIn();
+
+      console.log('User', userInfo.user);
+    } catch (error) {
+      switch (error.code) {
+        case statusCodes.SIGN_IN_CANCELLED:
+          // sign in was cancelled
+          console.log('cancelled');
+          break;
+        case statusCodes.IN_PROGRESS:
+          // operation (eg. sign in) already in progress
+          console.log('in progress');
+          break;
+        case statusCodes.PLAY_SERVICES_NOT_AVAILABLE:
+          // android only
+          console.log('play services not available or outdated');
+          break;
+        default:
+          console.log('Something went wrong', error.toString());
+      }
     }
   };
   return (
@@ -119,12 +145,13 @@ const AuthScreen = (props) => {
               />
               <Text style={styles.text}>{btnText}</Text>
             </Button> */}
-            <GoogleSigninButton
-              style={{width: 192, height: 48}}
-              size={GoogleSigninButton.Size.Wide}
-              color={GoogleSigninButton.Color.Dark}
-              onPress={onSignup}
-            />
+            <TouchableWithoutFeedback onPress={() => onSignup()}>
+              <GoogleSigninButton
+                size={GoogleSigninButton.Size.Standard}
+                color={GoogleSigninButton.Color.Auto}
+              />
+            </TouchableWithoutFeedback>
+
             <Button
               mode="contained"
               color="#3b5998"

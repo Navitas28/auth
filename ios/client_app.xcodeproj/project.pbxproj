@@ -11,9 +11,9 @@
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		1DE88210AA503644B805249C /* libPods-client_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB58E015DAF5BACF762AAAE6 /* libPods-client_app.a */; };
+		4551BA7213BF45FCB533EED0 /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAE5E8B5CAAE401EA1E5BE60 /* Alegreya-Medium.ttf */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C3E78DC3BF774163966A1EE8 /* Alegreya-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 58EEDAE74E144BC2AAC906E7 /* Alegreya-Bold.ttf */; };
-		4551BA7213BF45FCB533EED0 /* Alegreya-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EAE5E8B5CAAE401EA1E5BE60 /* Alegreya-Medium.ttf */; };
 		C74876A72A4243ABA046DAA5 /* Alegreya-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 686A9C0C985248C091EBD578 /* Alegreya-Regular.ttf */; };
 /* End PBXBuildFile section */
 
@@ -35,8 +35,10 @@
 		2415EC8940A17F59CBD065F4 /* Pods-client_app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client_app-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-client_app-tvOSTests/Pods-client_app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		32FC6F0565594B9FA0C5A30B /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		3D08189E5BE14EBBA9B287BC /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		58EEDAE74E144BC2AAC906E7 /* Alegreya-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Alegreya-Bold.ttf"; path = "../src/assets/fonts/Alegreya-Bold.ttf"; sourceTree = "<group>"; };
 		592882562C7449E482E165B9 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		63099245BBFD430BA76AEA79 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		686A9C0C985248C091EBD578 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Alegreya-Regular.ttf"; path = "../src/assets/fonts/Alegreya-Regular.ttf"; sourceTree = "<group>"; };
 		71C41A8914ED42E0A67E8804 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
 		71C979C05C7CFE71017A523C /* Pods-client_app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client_app-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-client_app-tvOS/Pods-client_app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = client_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,13 +56,11 @@
 		D63AC0508FFD69094635BA04 /* Pods-client_app-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client_app-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-client_app-tvOSTests/Pods-client_app-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		DB58E015DAF5BACF762AAAE6 /* libPods-client_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-client_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E59341C9167D81A00E302C1E /* libPods-client_app-client_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-client_app-client_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EAE5E8B5CAAE401EA1E5BE60 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Alegreya-Medium.ttf"; path = "../src/assets/fonts/Alegreya-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F5B4FBFBB77349ADBFDC856B /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		FC562E8E3F687EDB21F11287 /* Pods-client_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-client_app.debug.xcconfig"; path = "Target Support Files/Pods-client_app/Pods-client_app.debug.xcconfig"; sourceTree = "<group>"; };
-		58EEDAE74E144BC2AAC906E7 /* Alegreya-Bold.ttf */ = {isa = PBXFileReference; name = "Alegreya-Bold.ttf"; path = "../src/assets/fonts/Alegreya-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		EAE5E8B5CAAE401EA1E5BE60 /* Alegreya-Medium.ttf */ = {isa = PBXFileReference; name = "Alegreya-Medium.ttf"; path = "../src/assets/fonts/Alegreya-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		686A9C0C985248C091EBD578 /* Alegreya-Regular.ttf */ = {isa = PBXFileReference; name = "Alegreya-Regular.ttf"; path = "../src/assets/fonts/Alegreya-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +205,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				5F258267ECC09998BF4E4637 /* [CP] Copy Pods Resources */,
+				B36CB12B99687FC34B32F346 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +307,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-client_app/Pods-client_app-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -326,6 +328,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AntDesign.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Entypo.ttf",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/EvilIcons.ttf",
@@ -347,6 +350,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-client_app/Pods-client_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B36CB12B99687FC34B32F346 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-client_app/Pods-client_app-frameworks.sh",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/TwilioVideo/TwilioVideo.framework/TwilioVideo",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-client_app/Pods-client_app-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
