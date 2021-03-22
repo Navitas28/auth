@@ -71,10 +71,11 @@ const AuthScreen = (props) => {
       }
     }
   };
+
   return (
     <KeyboardAvoidingView
       behavior={isAndroid ? 'height' : 'padding'}
-      keyboardVerticalOffset={50}
+      keyboardVerticalOffset={49}
       style={styles.container}>
       <TouchableWithoutFeedback onPress={Keyboard.dismiss}>
         <View style={styles.innerContainer}>
