@@ -18,6 +18,7 @@ import {
   GoogleSigninButton,
   statusCodes,
 } from '@react-native-community/google-signin';
+import {fbLogin} from '../../services/SocialLoginHandler';
 
 import * as authActions from '../../store/actions';
 import DefaultStyles from '../../styles/DefaultStyles';
@@ -70,6 +71,23 @@ const AuthScreen = (props) => {
           console.log('Something went wrong', error.toString());
       }
     }
+  };
+  const errorCallback = (error) => {
+    debugger;
+  };
+  const data = (token, result) => {
+    let param = {
+      socialType: 'facebook',
+      socialId: result.id,
+      name: result.name,
+      email: result.email,
+      image: result.picture.data.url,
+    };
+    debugger;
+  };
+
+  const login = () => {
+    fbLogin(data, errorCallback);
   };
 
   return (
@@ -157,7 +175,7 @@ const AuthScreen = (props) => {
               mode="contained"
               color="#3b5998"
               style={styles.button}
-              onPress={onSignup}>
+              onPress={login}>
               <MaterialCommunityIcons
                 name="facebook"
                 size={24}
